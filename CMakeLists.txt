@@ -3,8 +3,8 @@ cmake_policy(SET CMP0054 NEW)
 
 project (py_aff3ct_test)
 
-# Enable C++11
-set(CMAKE_CXX_STANDARD 11)
+# Enable C++17
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Specify lib path
