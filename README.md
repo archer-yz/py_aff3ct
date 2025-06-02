@@ -39,9 +39,8 @@ $ cmake --build . --config Release
 
 The `AFF3CT` static and dynamic libraries are built in the `lib/aff3ct/build/release` folder.
 
-!!! note
-	C++ standard 17 should be used for compilation, otherwise there will be issues for wrapping
-	LDPC decoding modules..
+> [!note]
+> C++ standard 17 should be used for compilation, otherwise there will be issues for wrapping LDPC decoding modules..
 
 **Compile the AFF3CT documentation with `Doxygen`:**
 
@@ -52,8 +51,8 @@ $ cd source
 $ doxygen Doxyfile
 ```
 
-!!! info
-	Generated XML document will be used for creating Python wrappers.
+> [!note]
+> Generated XML document will be used for creating Python wrappers.
 
 ## Compile `py_aff3ct`
 
@@ -83,7 +82,8 @@ The compiled library is in `/build/lib/Release` folder.
 
 ---
 
-The followings are the **README** from original repository.
+> [!note]
+> The followings are the **README** from original repository.
 
 # Python to AFF3CT
 
