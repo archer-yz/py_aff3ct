@@ -29,9 +29,16 @@ Edit the `CMakeLists.txt` line for C++ standard:
 set(CMAKE_CXX_STANDARD 17)
 ```
 
+Edit the `CMakeLists.txt` in `streampu` submodule to turn off `SPU_STACKTRACE`:
+
+```cmake
+option(SPU_STACKTRACE          "Print the stack trace when an exception is raised"           OFF )
+```
+
 **Compile `aff3ct` on Windows & MSVC:**
 
 ```bash
+$ mkdir build
 $ cd build
 $ cmake .. -G "Visual Studio 17 2022" -A x64 -DAFF3CT_COMPILE_EXE="OFF" -DAFF3CT_COMPILE_STATIC_LIB="ON" -DAFF3CT_COMPILE_SHARED_LIB="ON"
 $ cmake --build . --config Release
