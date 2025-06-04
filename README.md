@@ -29,12 +29,6 @@ Edit the `CMakeLists.txt` line for C++ standard:
 set(CMAKE_CXX_STANDARD 17)
 ```
 
-Edit the `CMakeLists.txt` in `streampu` submodule to turn off `SPU_STACKTRACE`:
-
-```cmake
-option(SPU_STACKTRACE          "Print the stack trace when an exception is raised"           OFF )
-```
-
 **Compile `aff3ct` on Windows & MSVC:**
 
 ```bash
